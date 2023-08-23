@@ -8,7 +8,7 @@ import "./carousel.css"
 import Carousel from "./Carousel";
 export default function GamesList(){
     return(
-      <main className="flex flex-col h-screen p-[3%] w-screen gap-4">
+      <main className="flex flex-col h-screen px-[3%] py-[3%] w-screen gap-4">
         <section className="text-3xl font-semibold">Games Available</section>
             <Carousel />
       </main> 
