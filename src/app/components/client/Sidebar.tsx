@@ -52,7 +52,7 @@ export default function Sidebar() {
 
 
       {/* /////Top Navbar */}
-      <main className=" h-[100px] w-[100vw] bg-[#ADD2B5] hidden items-center justify-between max-sm:flex top-0 px-5 relative" onClick={()=>setMenu(false)}>
+      <main className=" min-h-[100px] w-[100vw] bg-[#ADD2B5] hidden items-center justify-between max-sm:flex top-0 px-5 relative" onClick={()=>setMenu(false)}>
         <div className="flex items-center justify-center gap-2">
           <Image
             src="/img/NewMagnimusLogo.svg"

@@ -15,10 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
-        <main className="h-[100vh] flex overflow-hidden max-sm:flex-col max-sm:overflow-hidden justify-between">
+        <main className="h-[100vh] flex overflow-hidden max-sm:flex-col max-sm:overflow-hidden">
             <Sidebar />
             {children}
-            <div className="h-[100px] w-full bg-[#ADD2B5] hidden max-sm:flex items-center justify-between px-5 font-medium"><span>Lorem</span><span>Ipsum</span></div>
+            <div className="min-h-[100px] w-full bg-[#ADD2B5] hidden max-sm:flex items-center justify-between px-5 font-medium"><span>Lorem</span><span>Ipsum</span></div>
         </main>
       </body>
     </html>
