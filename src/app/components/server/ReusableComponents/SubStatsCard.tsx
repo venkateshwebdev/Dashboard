@@ -4,7 +4,7 @@ import PieChart from "./Charts/PieChart";
 const SubStatsCard = (props: any) => {
     console.log(props.name.toLowerCase())
     const stylingObj:any = {
-        score:{color:"#F8961E",color2:"#14C9C9"},
+        score:{color:"#F8961E",color2:"#14C9C9",units:"points"},
         speed:{color:"#165DFF",units:"Kmph"},
         calories:{color:"#FF5C00",units:"cal"},
         steps:{color:"#254682",units:"steps"},
@@ -14,9 +14,9 @@ const SubStatsCard = (props: any) => {
   return (
     <main className="bg-[#ebebeb] flex flex-col rounded-xl shadow-md p-5">
       {/* topNavbar */}
-      <section className="w-full flex justify-between font-semibold">
+      <section className="w-full flex justify-between font-semibold flex-wrap">
         <span>{props.name}</span>
-        <div className={`flex gap-2 flex-wrap items-center justify-center`} style={{color:current?.color}} >
+        <div className={`flex gap-2 items-center justify-center`} style={{color:current?.color}} >
           <span>{props.done}</span>/<span style={{color:current?.color2}}>{props.target}</span>
           <span className="text-xs font-normal">{current?.units}</span>
         </div>
