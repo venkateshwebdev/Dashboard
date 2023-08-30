@@ -2,10 +2,10 @@ import { title } from "@/app/fonts";
 const statsHomePage = ({params}:any) => {
     const GameTitle = params?.id?.replace(/_/g, " ");
     return (
-        <main className="flex flex-col py-7 px-5 h-screen overflow-hidden gap-5 w-full">
+        <main className="flex flex-col py-7 px-5 h-screen overflow-y-auto gap-5 w-full">
         <section className={`text-3xl font-semibold ${title.className}`}>
         {GameTitle.toUpperCase()}
-      </section>
+        </section>
       </main>
     );
 }
