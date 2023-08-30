@@ -29,8 +29,8 @@ const Sessions = ({ params }: any) => {
         {GameTitle?.toUpperCase()}
       </section>
       <section className="text-xl font-medium">Session wise Data</section>
-      {stuff.map(e=>
-      <section className={`flex flex-col border-2 border-black relative rounded-xl shadow-lg overflow-y-auto mt-4 h-full w-full`}>
+      {stuff.map((e,i)=>
+      <section key={i} className={`flex flex-col border-2 border-black relative rounded-xl shadow-lg overflow-y-auto mt-4 h-full w-full`}>
       <div className="flex min-h-[75px] bg-[#ADD2B5] border-b-2 border-black items-center px-5 overflow-x-auto z-50 justify-between">Session          <div className="font-medium text-lg">
             {statsCarousel ? "Health Stats" : "Game Stats"}
           </div>
