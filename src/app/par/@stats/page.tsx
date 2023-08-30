@@ -44,11 +44,7 @@ const StatsInfo = ({ params }: any) => {
     { type: "armit", done: "80", target: "100" },
   ];
   return (
-    <main className="flex flex-col py-7 px-5 h-screen overflow-hidden gap-5 w-full">
-      <section className={`text-3xl font-semibold ${title.className}`}>
-        {GameTitle?.toUpperCase()}
-      </section>
-
+    <main className="flex flex-col h-full overflow-hidden gap-5 w-full">
       <section className="lg:w-[70%] w-full flex gap-2 overflow-x-auto min-h-[40px]">
       <div className="flex-1 w-full shadow-lg"  onClick={()=>setTab(0)}>
         <Button name="Daily"    />

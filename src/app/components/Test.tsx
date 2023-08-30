@@ -3,11 +3,11 @@ import { title } from "@/app/fonts";
 import {BsFillCaretLeftFill,BsFillCaretRightFill} from "react-icons/bs"
 import Button from "@/app/components/server/ReusableComponents/Button";
 import { useState } from "react";
-import SubStatsCard from "@/app/components/server/ReusableComponents/SubStatsCard";
+import SubStatsCard from "@/app/components/server/ReusableComponents/GraphCards";
 
 const Test = ({ params }: any) => {
     const [date, setDate] = useState(1);
-    // const GameTitle = params?.id?.replace(/_/g, ' ');
+    const GameTitle = params?.id?.replace(/_/g, ' ');
     const randomStuff = [{type:"Score",done:"60",target:"100"},{type:"Steps",done:"600",target:"1000"},{type:"Speed",done:"30",target:"100"},{type:"Calories",done:"80",target:"100"},{type:"Shots",done:"30",target:"100"}]
     return (
       <main className="flex flex-col py-7 px-5 h-screen overflow-hidden gap-5 w-full">

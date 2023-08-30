@@ -47,9 +47,7 @@ const PieChart = ({ scored, target ,donutSize}:any) => {
   };
 
   return (
-    <div>
       <Pie data={data} options={options} />
-    </div>
   );
 };
 
